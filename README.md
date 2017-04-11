@@ -57,7 +57,7 @@ varReduction
 	single results/varRed.dat -or- none
 ```
 
-To talk a bit about many of the parameters:
+here's an explanation of some of the parameters:
 * backprop
 * * `seed 100` is setting your random number generator seed to 100.
 * * `topology3` specifies a topology with one layer of hidden nodes, where the actual number of input, hidden, and output nodes are given in the same line in that order as seen above.  You can change this to `topology4` to have two hidden layers, and will of course need to now have 4 integers following that word.
