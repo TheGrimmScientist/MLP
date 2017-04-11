@@ -1,0 +1,11 @@
+#!/bin/sh
+
+
+# g++ -g source/main.cpp -o Experiment/NNS.exe
+
+g++ -g source/main.cpp -o NNS.exe
+
+echo
+echo
+
+

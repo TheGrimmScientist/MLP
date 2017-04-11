@@ -1,0 +1,21 @@
+backprop
+	seed 100
+	topology3 8 3 8
+data
+	format 8 8
+	nTrials 8
+	datFile 838Encoder.dat
+	normalize unit
+train 
+	trainSet results/train.vec
+	testSet results/test.vec
+	nTrainIters 10000
+	epochSize  1
+	learnRate 0.9
+	track results/training_log.txt 5  -or- none
+save
+	rms results/RMS.txt -or- none
+	network results/Trained.net -or- none
+	output results/Output.txt
+varReduction
+	single results/varRed.dat -or- none
