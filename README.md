@@ -1,5 +1,5 @@
 # MLP
-A neural network simulator implementing backprop in C++ I wrote in 2011.  I was way worse at creating interfaces, never heard of tests, and totally dind't document the file formats I expected.  So I'll overview some important bits here, but be warned, you'll probalby have to have at least a familiarity with C++ to be able to use this thing.
+A neural network simulator implementing backprop in C++ I wrote in 2011.  I was way worse at creating interfaces, never heard of tests, and totally didn't document the file formats I expected.  So I'll overview some important bits here, but be warned, you'll probalby have to have at least a familiarity with C++ to be able to use this thing.
 
 ## Getting it running
 
