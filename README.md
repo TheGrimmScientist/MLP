@@ -60,15 +60,15 @@ varReduction
 here's an explanation of some of the parameters:
 * backprop
   * `seed 100` is setting your random number generator seed to 100.
-* * `topology3` specifies a topology with one layer of hidden nodes, where the actual number of input, hidden, and output nodes are given in the same line in that order as seen above.  You can change this to `topology4` to have two hidden layers, and will of course need to now have 4 integers following that word.
+  * `topology3` specifies a topology with one layer of hidden nodes, where the actual number of input, hidden, and output nodes are given in the same line in that order as seen above.  You can change this to `topology4` to have two hidden layers, and will of course need to now have 4 integers following that word.
 * data
-* * `format 8 8` is telling the framework to expect a data file 16 lines long, where the first 8 are to be interpreted as inputs and the second 8 are to be interpreted as outputs to the NN.  I also let you pass a file in here where you can set each row to be input, output, or ignored.  I'll let you dig into the code to figure out how to use that one.
-* * `nTrials` is how many rows in the data to use.
-* * `file <filename>` is filename for the data you want to pass in.
-*train
-* * `trainSet` and `testSet` are the files that point to the rows within data.file you want to have in each set.  Note this is somehow 1-indexed.  Rather than passing in a file to specify, you can set both to `none` and have it simply build the network using all data and not have test statistics.
-* * The next several paramters are right out of NN literature, though in hindsight I fear I defined learnRate a bit wrong.
+  * `format 8 8` is telling the framework to expect a data file 16 lines long, where the first 8 are to be interpreted as inputs and the second 8 are to be interpreted as outputs to the NN.  I also let you pass a file in here where you can set each row to be input, output, or ignored.  I'll let you dig into the code to figure out how to use that one.
+  * `nTrials` is how many rows in the data to use.
+  * `file <filename>` is filename for the data you want to pass in.
+* train
+  * `trainSet` and `testSet` are the files that point to the rows within data.file you want to have in each set.  Note this is somehow 1-indexed.  Rather than passing in a file to specify, you can set both to `none` and have it simply build the network using all data and not have test statistics.
+  * The next several paramters are right out of NN literature, though in hindsight I fear I defined learnRate a bit wrong.
 * save
-* * `network` is the actual trained network saved to file.
-* * `output` is the sample-by-sample actual activations.
+  * `network` is the actual trained network saved to file.
+  * `output` is the sample-by-sample actual activations.
 
