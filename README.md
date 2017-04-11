@@ -59,7 +59,7 @@ varReduction
 
 here's an explanation of some of the parameters:
 * backprop
-* * `seed 100` is setting your random number generator seed to 100.
+  * `seed 100` is setting your random number generator seed to 100.
 * * `topology3` specifies a topology with one layer of hidden nodes, where the actual number of input, hidden, and output nodes are given in the same line in that order as seen above.  You can change this to `topology4` to have two hidden layers, and will of course need to now have 4 integers following that word.
 * data
 * * `format 8 8` is telling the framework to expect a data file 16 lines long, where the first 8 are to be interpreted as inputs and the second 8 are to be interpreted as outputs to the NN.  I also let you pass a file in here where you can set each row to be input, output, or ignored.  I'll let you dig into the code to figure out how to use that one.
